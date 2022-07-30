@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+{% block title%}A Propos de Nous {%endblock%}
+{%block covid%}
+{%endblock%}
+{%block content%}
+    <div class="container">
+        <div class="row">
+            <div class="center">
+                <a href="/">
+                    <img src="{{asset ('assets/image/hypnos_badge.jpg')}}" style="width: 150px;height: 150px;" alt="Hypnos - World Hôtel">
+                </a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="center">
+            <h1><em>
+                    A Propos de Nous ...</em></h1>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <p><strong class="about">
+                        Hypnos Hotels and Resorts est une marque d'hôtels de luxe basée sur 4 Continents dont le siége est à Paris en France.<br>
+                        Détenue par le groupe AccorHotels. Tirant son nom du Bien Etre offert a nos clients lors de leurs expérience, l’enseigne Hyonos Hotels apparaît à la fin des années 1980, disparaît progressivement dans les années 1990 après son rachat par le groupe Accor, puis est réactivée en 2007 et orientée vers le tourisme de luxe.<br><br><br><br><br>
+                        Aujourd'hui Hypnos c'est :<br>
+                    </strong></p>
+                <div class="col-6">
+                    <ul>
+                        <li>7 Hôtels dans 7 pays pour pas moins de 750 Chambres</li>
+                        <li>30 Restaurants</li>
+                        <li>7 Centres de Remise en Formes</li>
+                        <li>3 Discotheques ( Bali - Marrakech et Santorin</li>
+                        <li>1 Casino ( Venise )</li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <a href="/">
+                        <img src="{{ asset('assets/image/hypnos_badge.jpg') }}" style="width: 350px;height: 350px;" alt="Hypnos - World Hôtel">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{%endblock%}

@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hypnos - Réclamation{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <section>
+                    <form method="post" action="#">
+                        <div id="reclamation">
+                            <fieldset>
+                                <legend  class="d-block p-2 bg-danger text-white"><?php echo TXT_CLAIM_1 ?></legend>
+                                <h2 class="center">
+                                    <?php echo TXT_CLAIM_2 ?><br><br>
+                                </h2>
+                            </fieldset>
+                        </div>
+                        <div id="coordonnees">
+                            <fieldset>
+                                <legend  class="d-block p-2 bg-danger text-white"><?php echo TXT_RESER_4 ?></legend>
+                                <p>
+                                    <label for="firstname"><?php echo TXT_RESER_FIRSTNAME ?></label> <br>
+                                    <input type="text" name="firstname" id="firstname" placeholder="Peter" size="150" required />
+                                </p>
+                                <p>
+                                    <label for="lastname"><?php echo TXT_RESER_LASTNAME ?></label> <br>
+                                    <input type="text" name="lastname" id="lastname"placeholder="Pan"  size="150" required />
+                                </p>
+                                <p>
+                                    <label for="adress"><?php echo TXT_RESER_ADRESS ?></label> <br>
+                                    <textarea name="adress" id="adress" placeholder="Montréal" rows="2" cols="150" required ></textarea>
+                                </p>
+                                <p>
+                                    <label for="postcode"><?php echo TXT_RESER_POSTCODE ?></label> <br>
+                                    <input type="text" name="postcode" id="postcode" placeholder="H9X 0B3" size="150" required />
+                                </p>
+                                <p>
+                                    <label for="town"><?php echo TXT_RESER_TOWN ?></label> <br>
+                                    <input type="text" name="town" id="town" placeholder="Canada" size="150" required />
+                                </p>
+                                <p>
+                                    <label for="email"><?php echo TXT_RESER_EMAIL ?></label> <br>
+                                    <input type="email" name="email" id="email" placeholder="contact@hypnos.com" size="150" required />
+                                </p>
+                                <p>
+                                    <label for="email"><?php echo TXT_RESER_CONFIRMEDEMAIL ?></label> <br>
+                                    <input type="email" name="email" id="email" placeholder="contact@hypnos.com" size="150" required />
+                                </p>
+                                <p>
+                                    <label for="phone"><?php echo TXT_RESER_PHONE ?></label> <br>
+                                    <input type="phone" name="phone" id="phone" placeholder="01 02 03 04 05" size="150" required />
+                                </p>
+                                </legend>
+                            </fieldset>
+
+                            <p>
+                                <?php echo TXT_CLAIM_3 ?><br>
+                                <input type="radio" name="claim" value="hotel" id="hotel" /> <label for="hotel"><?php echo TXT_CLAIM_4 ?></label><br>
+                                <input type="radio" name="claim" value="worker" id="worker" /> <label for="worker"><?php echo TXT_CLAIM_5 ?></label><br>
+                                <input type="radio" name="claim" value="price" id="price" /> <label for="price"><?php echo TXT_CLAIM_6 ?></label><br>
+                                <input type="radio" name="claim" value="extra" id="extra" /> <label for="extra"><?php echo TXT_CLAIM_7 ?></label><br>
+                                <input type="radio" name="claim" value="room" id="room" /> <label for="room"><?php echo TXT_CLAIM_8 ?></label><br>
+                                <input type="radio" name="claim" value="restaurant" id="restaurant" /> <label for="restaurant"><?php echo TXT_CLAIM_9 ?></label><br>
+                                <input type="radio" name="claim" value="other" id="other" /> <label for="other"><?php echo TXT_CLAIM_10 ?></label><br>
+                            </p>
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" placeholder="Reclamation , Beschwerde , Complaint , Queja"  size="150" rows="5" class="form-control md-textarea"></textarea>
+                                <label for="message">
+                                    <?php echo TXT_CLAIM_AREA ?>
+                                </label>
+                            </div>
+                            <input type="submit" value="<?php echo TXT_CLAIM_SEND ?>" class="btn btn-danger"/>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+{% endblock %}

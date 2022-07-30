@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FaqsController!{% endblock %}
+
+{% block content%}
+<div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                <?php echo TXT_FAQS_1 ?>
+            </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+                <strong><?php echo TXT_FAQS_1A ?></strong> <?php echo TXT_FAQS_1B ?><a href="reservation.php"><?php echo TXT_FAQS_1L ?> </a>
+            </div>
+        </div>
+    </div>
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        <?php echo TXT_FAQS_2 ?>
+    </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+        <div class="accordion-body">
+            <strong><?php echo TXT_FAQS_2A ?></strong> <?php echo TXT_FAQS_2B ?><a href="claim.php"><?php echo TXT_FAQS_2L ?> </a>
+        </div>
+    </div>
+</div>
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+    <?php echo TXT_FAQS_3 ?>
+</button>
+</h2>
+<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+    <div class="accordion-body">
+        <strong><?php echo TXT_FAQS_3A ?></strong> <?php echo TXT_FAQS_3B ?><a href="price.php"><?php echo TXT_FAQS_3L ?> </a>
+    </div>
+</div>
+</div>
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+    <?php echo TXT_FAQS_4 ?>
+</button>
+</h2>
+<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+    <div class="accordion-body">
+        <strong><?php echo TXT_FAQS_4A ?></strong> <?php echo TXT_FAQS_4B ?><a href="contact.php"><?php echo TXT_FAQS_4L ?> </a>
+    </div>
+</div>
+</div>
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+    <?php echo TXT_FAQS_5 ?>
+</button>
+</h2>
+<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+    <div class="accordion-body">
+        <strong><?php echo TXT_FAQS_5A ?></strong> <?php echo TXT_FAQS_5B ?><a href="contact.php"><?php echo TXT_FAQS_5L ?> </a>
+    </div>
+</div>
+</div>
+{%endblock%}

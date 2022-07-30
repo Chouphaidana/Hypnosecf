@@ -1,0 +1,151 @@
+{% extends 'base.html.twig' %}
+{% block title %}Hypnos - Nos Hôtels {% endblock %}
+
+{%block carousel%}
+{%endblock%}
+
+{%block covid%}
+{%endblock%}
+
+{%block marketing%}
+    <div class="container marketing">
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1"><a href="/bali">Bali</a><br><span class="text-muted"><br>Magnifique Indonésie</span></h2>
+            </div>
+            <div class="col-md-5">
+                <img src="{{ asset('assets/image/hotel_bali/bali_3.jpg') }}" alt="flowers" style="width:500px;height: 500px;">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1"><a href="/lesmaldives">Les Maldives</a><br><span class="text-muted"><br>Le Côté ensoleillé de la Vie</span></h2>
+
+            </div>
+            <div class="col-md-5 order-md-2">
+                <img src="{{ asset('assets/image/hotel_maldive/maldive_3.jpg') }}" alt="flowers" style="width:500px;height: 500px;">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1"><a href="/marrakech">Marrakech</a><br><span class="text-muted"><br>Beaucoup Plus ... </span></h2>
+            </div>
+            <div class="col-md-5">
+                <img src="{{ asset('assets/image/hotel_maroc/marrakech_3.jpg') }}" alt="flowers" style="width:500px;height: 500px;">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+{%endblock%}
+
+    {%block content%}
+            <div class="container">
+                <div class="row">
+                    <img src="{{ asset('assets/image/digital-art-gab9ac4ec1_1920.png') }}"height="700px" width="1200px" alt="Plage Romantique">
+                </div>
+                    <div class="centerTitle">
+                    <h1 class="textInfo"><br>Hypnos World Hôtel c'est : <br><br> 7 Hôtels Romantiques sur toute la planéte...</h1>
+                    <h1 class="textInfo"><br>On va bien trouver votre bonheur !!!</h1>
+                </div>
+                    <br>
+                    <br>
+                    <div class="textHappy">
+                        <p>Besoin d'information avant de réserver ?</p>
+                        <p>Choisissez votre destination pour vous rendre sur la page de l'hôtel et obtenir toutes les informations dont vous avez besoin :</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <form>
+                    <div class="container">
+                    <div class="form-row align-items-center">
+                        <div class="col-auto my-5">
+                            <label class="mr-sm-2" for="inlineFormCustomSelect">Votre Destination :</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>A vous de Choisir ?</option>
+                                <option value="1"><a href="/bali">Bali en Indonésie</a></option>
+                                <option value="2"><a href="#">Les Maldives dans l'Océan Indien</a></option>
+                                <option value="3"><a href="#">Marrakech au Maroc</a></option>
+                                <option value="3"><a href="#">Dans la Ville des Amoureux a Paris en France</a></option>
+                                <option value="3"><a href="#">En forêt noire a Salzbourg en Autriche</a></option>
+                                <option value="3"><a href="#">En Grêce antique a Santorin</a></option>
+                                <option value="3"><a href="#">Sur les Gondoles a Venise en Italie</a></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row align-items-center">
+                        <button type="submit" class="btn btn-danger"><option value="3">On s'envole ?</option></button>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        {%endblock%}
+
+
+{%block marketingBis%}
+    <div class="container marketing">
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1"><a href="/paris">Paris</a><br><span class="text-muted"><br>Rendez Vous en France</span></h2>
+            </div>
+            <div class="col-md-5">
+                <img src="{{ asset('assets/image/hotel_paris/paris_3.jpg') }}" alt="flowers" style="width:500px;height: 500px;">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1"><a href="/salzbourg">Salzbourg</a><br><span class="text-muted"><br>Arriver et Revivre</span></h2>
+            </div>
+            <div class="col-md-5 order-md-2">
+                <img src="{{ asset('assets/image/hotel_salzbourg/salzbourg_3.jpg') }}" alt="flowers" style="width:500px;height: 500px;">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1"><a href="/santorin">Santorin</a><br><span class="text-muted"><br>Classique de tous les Temps ...</span></h2>
+            </div>
+            <div class="col-md-5">
+                <img src="{{ asset('assets/image/hotel_santorin/santorin_3.jpg') }}" alt="flowers" style="width:500px;height: 500px;">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1"><a href="/venise">Venise</a><br><span class="text-muted"><br>Made in Italy</span></h2>
+            </div>
+            <div class="col-md-5 order-md-2">
+                <img src="{{ asset('assets/image/hotel_venise/venise_3.jpg') }}" alt="flowers" style="width:500px;height: 500px;">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+{%endblock%}

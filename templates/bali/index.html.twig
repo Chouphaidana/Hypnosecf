@@ -1,0 +1,270 @@
+{% extends 'base.html.twig' %}
+{% block title %}Hypnos - Bali {% endblock %}
+
+
+{% block content%}
+    <link href="{{asset('assets/css/hypnosStyle.css')}}" rel="stylesheet">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="{{ asset('assets/image/hotel_bali/bali_1.jpg') }}" alt="beach" style="width:100%">
+            </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="{{ asset('assets/image/hotel_bali/bali_spa.jpg') }}" alt="flower" style="width:100%">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="{{ asset('assets/image/hotel_bali/bali_3.jpg') }}" alt="flowers" style="width:100%">
+                </div>
+            </div>
+        </div>
+    <div class="row">
+        <h1 class="centerTitle">
+            Bienvenue a Bali
+        </h1>
+    </div>
+    </div>
+    <div class="container">
+    <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="{{ asset('assets/image/hotel_bali/bali_food.jpg') }}" alt="beach" style="width:100%">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="{{ asset('assets/image/hotel_bali/bali_4.jpg') }}" alt="flower" style="width:100%">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="{{ asset('assets/image/hotel_bali/bali_food.jpg') }}" alt="flowers" style="width:100%">
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+    <br>
+    <div class="container">
+        <p>
+            Bali est une île du sud de l\'Indonésie située entre les îles de Java et de Lombok.<br>
+            Elle fait partie des petites îles de la Sonde. Sa superficie est de 5 637 km2. La population de l'ensemble des îles de la province de Bali était <br>de 4 317 404 habitants en 2020, soit une densité de 750 habitants par km2.<br>
+            Administrativement, l'île fait partie de la province du même nom et accueille sa capitale (ibu kota), Denpasar, dans le sud de l'île.<br>
+        </p>
+        <br>
+        <h4 class="infoPays">
+            <ul>
+                <li>Monnaie : Roupie Indonésienne ( 1€ = 15.95 IDR )<br></li>
+                <li>Langue : Balinais ; Indonésien ; Anglais</li>
+                <li>Temperature Moyenne Eté : 28 Degrés</li>
+                <li>Temperature Moyenne Hivers : 26 Degrés</li>
+                <li>Religion Principale : Musulman</li>
+            </ul>
+        </h4>
+    </div>
+    <br>
+    <div class="container">
+        <h1 class="center">
+            Notre Hôtel :
+        </h1>
+        <p>
+            Situé à 3,4 km de la Forêt des singes d'Ubud, Hyonos Hôtel Bali vous propose un jacuzzi par et un spa par chambre avec vue sur la Forêt ou la plage.<br>
+            Cinqs restaurant avec de la cuisine des quatres coin du monde.<br>
+            Notre hôtel boutique dans le quartier Campuhan jouit de la proximité d'attractions touristiques telles que Naughty Nuri's Ubud et le Musée d'art de Neka.'<br>
+            Situé a 45 km de l'aéroport Internationnal de Dempasar ( Navette Incluse sur demande )
+        </p>
+    </div>
+    <br>
+    </div>
+    <!-- Menu Reservation  -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <section>
+                    <form method="post" action="reservationconfirm.php">
+                        <div id="reservation">
+                            <fieldset>
+                                <legend  class="d-block p-2 bg-danger text-white">Bali<br>Magnifique Indonésie</legend>
+                                <p>
+                                    Vous souhaitez réserver ?<br><br>
+                                    <input type="radio" name="booking" value="Chambre Classique" id="Chambre Classique" /> <label for="Chambre Classique">Chambre Classique </label><br>
+                                    <input type="radio" name="booking" value="Chambre Supérieur" id="Chambre Supérieur" /> <label for="Chambre Supérieur">Chambre Supérieur</label><br>
+                                    <input type="radio" name="booking" value="Chambre Luxe" id="Chambre Luxe" /> <label for="Chambre Luxe">Chambre Luxe</label><br>
+                                    <input type="radio" name="booking" value="Appartement" id="Appartement" /> <label for="Appartement">Appartement</label>
+                                </p>
+                                <div class="row">
+                                <p>
+                                    <label  class="d-block p-2" for="booking_day">Jour d'arrivée :</label>
+                                    <select name="day" id="day">
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                    <select name="month" id="month">
+                                        <option value="01">Janvier</option>
+                                        <option value="02">Février</option>
+                                        <option value="03">Mars</option>
+                                        <option value="04">Avril</option>
+                                        <option value="05">Mai</option>
+                                        <option value="06">Juin</option>
+                                        <option value="07">Juillet</option>
+                                        <option value="08">Aout</option>
+                                        <option value="09">Septembre</option>
+                                        <option value="10">Octobre</option>
+                                        <option value="11">Novembre</option>
+                                        <option value="12">Décembre</option>
+                                    </select>
+                                    <select name="year" id="year">
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                    </select>
+                                </p>
+                        </div>
+                        <div class="row">
+                            <p>
+                                <label  class="d-block p-2" for="booking_day">Jour de Départ:</label>
+                                <select name="day" id="day">
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                                <select name="month" id="month">
+                                    <option value="01">Janvier</option>
+                                    <option value="02">Février</option>
+                                    <option value="03">Mars</option>
+                                    <option value="04">Avril</option>
+                                    <option value="05">Mai</option>
+                                    <option value="06">Juin</option>
+                                    <option value="07">Juillet</option>
+                                    <option value="08">Aout</option>
+                                    <option value="09">Septembre</option>
+                                    <option value="10">Octobre</option>
+                                    <option value="11">Novembre</option>
+                                    <option value="12">Décembre</option>
+                                </select>
+                                <select name="year" id="year">
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                </select>
+                            </p>
+                        </div>
+                            </fieldset>
+                        </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <section>
+                    <div id="coordonnees">
+                        <fieldset>
+                            <legend  class="d-block p-2 bg-danger text-white">Vos Coordonnées :</legend>
+                            <p>
+                                <label for="lastname">Votre Nom :</label> <br>
+                                <input type="text" class="form-control" name="lastname" id="lastname"placeholder="Pan"  size="150" required />
+                            </p>
+                            <p>
+                                <label for="firstname">Votre Prénom :</label> <br>
+                                <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Peter" size="150" required />
+                            </p>
+
+                            <p>
+                                <label for="adress">Votre adresse :</label> <br>
+                                <textarea class="form-control" name="adress" id="adress" placeholder="Montréal" rows="2" cols="150" required ></textarea>
+                            </p>
+                            <p>
+                                <label for="postcode">Votre code Postal :</label> <br>
+                                <input type="text" class="form-control" name="postcode" id="postcode" placeholder="H9X 0B3" size="150" required />
+                            </p>
+                            <p>
+                                <label for="town">Votre Ville :</label> <br>
+                                <input type="text" class="form-control" name="town" id="town" placeholder="Montréal" size="150" required />
+                            </p>
+                            <p>
+                                <label for="town">Votre Pays :</label> <br>
+                                <input type="text" class="form-control" name="town" id="country" placeholder="Canada" size="150" required />
+                            </p>
+                            <p>
+                                <label for="email">Votre Email :</label> <br>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="contact@hyonos.com" size="150" required />
+                            </p>
+                            <p>
+                                <label for="email">Veuillez Confirmer votre Email :</label> <br>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="contact@hyonos.com" size="150" required />
+                            </p>
+                            <p>
+                                <label for="phone">Votre Téléphone :</label> <br>
+                                <input type="phone" class="form-control" name="phone" id="phone" placeholder="01 02 03 04 05" size="150" required />
+                            </p>
+                        </fieldset>
+                    </div>
+                    <input type="submit" value="Envoyer votre Réservation" class="btn btn-danger"/>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+{%endblock%}

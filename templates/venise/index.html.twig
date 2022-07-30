@@ -1,0 +1,272 @@
+{% extends 'base.html.twig' %}
+{% block title %}Hypnos - Venise {% endblock %}
+
+
+{% block content%}
+    <link href="{{asset('assets/css/hypnosStyle.css')}}" rel="stylesheet">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="{{ asset('assets/image/hotel_venise/venise_1.jpg') }}" alt="beach" style="width:100%">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="{{ asset('assets/image/hotel_venise/venise_spa.jpg') }}" alt="flower" style="width:100%">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="{{ asset('assets/image/hotel_venise/venise_3.jpg') }}" alt="flowers" style="width:100%">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="centerTitle">
+                Bienvenue a Venise
+            </h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="{{ asset('assets/image/hotel_venise/venise_food.jpg') }}" alt="beach" style="width:100%">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="{{ asset('assets/image/hotel_venise/venise_4.jpg') }}" alt="flower" style="width:100%">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="{{ asset('assets/image/hotel_venise/venise_food.jpg') }}" alt="flowers" style="width:100%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <p>
+            Venise  est une ville côtière du nord-est de l'Italie, sur les rives de la mer Adriatique.<br>Elle s'étend sur un ensemble de 121 petites îles séparées par un réseau de canaux et reliées par 435 ponts.<br>
+            Située au milieu de la lagune vénète, entre les estuaires du Pô et du Piave, Venise est renommée pour cet emplacement exceptionnel ainsi que pour son Architecture et son patrimoine culturel, qui lui valent une inscription au patrimoine mondial de l'UNESCO.<br>
+            Venise est la capitale de la région de la Vénétie. En 2012, la commune compte 269 810 habitants, dont 58 666 intra-muros. 176 000 résident sur les rives,<br>Pour la plupart dans les frazioni de Mestre et Marghera, et les 31 000 habitants restants résident dans d'autres îles de la lagune.<br>Avec Padoue et Trévise, Venise constitue l'aire métropolitaine Padoue-Trévise-Venise, une entité statistique de 1 600 000 habitants.
+        </p>
+        <br>
+        <h4 class="infoPays">
+            <ul>
+                <li>Monnaie : Euros<br></li>
+                <li>Langue : Italien</li>
+                <li>Temperature Moyenne Eté : 30 Degrés</li>
+                <li>Temperature Moyenne Hivers : 15 Degrés</li>
+                <li>Religion Principale : Catholique</li>
+            </ul>
+        </h4>
+    </div>
+    <br>
+    <div class="container">
+        <h1 class="center">
+            Notre Hôtel :
+        </h1>
+        <p>
+            Installé sur la petite île d’Isola delle Rose, dans la lagune de Venise, Hypnos Venice Resort & Spa est un complexe hôtelier 5 étoiles.<br>Doté d’un spa offrant une vue sur cette étendue d’eau, de 3 piscines extérieures ainsi que de 4restaurants.<br>Le domaine de Hyonos Venice comprend également des jardins verdoyants, un toit-terrasse avec piscine et une église.<br>
+            Le restaurant sur le toit sert des spécialités vénitiennes et des cicchetti, le restaurant familial est situé au bord de l'une des piscines et le restaurant Gastronomique Fiola at Dopolavoro Venezia est dirigé par le chef étoilé au guide Michelin Fabio Trabocchi.<br>
+            Vous trouverez également 3 bars sur place.<br>
+            Présentant une décoration moderne, les chambres et les suites de luxe incluent la climatisation ainsi qu’une salle de bains privative.<br>Certaines occupent le bâtiment principal muni du toit-terrasse avec piscine et d'autres sont dispersées parmi les jardins.<br>
+            Un bateau-navette gratuit vous permettra de rejoindre le quai privé à proximité de la place Saint-Marc en 15 minutes.
+        </p>
+    </div>
+    <br>
+    </div>
+    <!-- Menu Reservation  -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <section>
+                    <form method="post" action="/reservation">
+                        <div id="reservation">
+                            <fieldset>
+                                <legend  class="d-block p-2 bg-danger text-white">Bienvenue a Venise <br>Made in Italy</legend>
+                                <p>
+                                    Vous souhaitez réserver ?<br><br>
+                                    <input type="radio" name="booking" value="Chambre Classique" id="Chambre Classique" /> <label for="Chambre Classique">Chambre Classique </label><br>
+                                    <input type="radio" name="booking" value="Chambre Luxe" id="Chambre Luxe" /> <label for="Chambre Luxe">Chambre Luxe</label><br>
+                                    <input type="radio" name="booking" value="Chambre Luxe Vue" id="Chambre Luxe Vue" /> <label for="Chambre Luxe Vue">Chambre Luxe avec Vue sur le Canal</label><br>
+                                    <input type="radio" name="booking" value="Appartement" id="Appartement" /> <label for="Appartement">Appartement</label><br>
+                                    <input type="radio" name="booking" value="Appartement Vue" id="Appartement Vue" /> <label for="Appartement Vue">Appartement avec Vue sur le Canal</label>
+                                </p>
+                                <div class="row">
+                                    <p>
+                                        <label  class="d-block p-2" for="booking_day">Jour d'arrivée :</label>
+                                        <select name="day" id="day">
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+                                        <select name="month" id="month">
+                                            <option value="01">Janvier</option>
+                                            <option value="02">Février</option>
+                                            <option value="03">Mars</option>
+                                            <option value="04">Avril</option>
+                                            <option value="05">Mai</option>
+                                            <option value="06">Juin</option>
+                                            <option value="07">Juillet</option>
+                                            <option value="08">Aout</option>
+                                            <option value="09">Septembre</option>
+                                            <option value="10">Octobre</option>
+                                            <option value="11">Novembre</option>
+                                            <option value="12">Décembre</option>
+                                        </select>
+                                        <select name="year" id="year">
+                                            <option value="2022">2022</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2024">2024</option>
+                                        </select>
+                                    </p>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <label  class="d-block p-2" for="booking_day">Jour de Départ:</label>
+                                        <select name="day" id="day">
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+                                        <select name="month" id="month">
+                                            <option value="01">Janvier</option>
+                                            <option value="02">Février</option>
+                                            <option value="03">Mars</option>
+                                            <option value="04">Avril</option>
+                                            <option value="05">Mai</option>
+                                            <option value="06">Juin</option>
+                                            <option value="07">Juillet</option>
+                                            <option value="08">Aout</option>
+                                            <option value="09">Septembre</option>
+                                            <option value="10">Octobre</option>
+                                            <option value="11">Novembre</option>
+                                            <option value="12">Décembre</option>
+                                        </select>
+                                        <select name="year" id="year">
+                                            <option value="2022">2022</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2024">2024</option>
+                                        </select>
+                                    </p>
+                                </div>
+                            </fieldset>
+                        </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <section>
+                    <div id="coordonnees">
+                        <fieldset>
+                            <legend  class="d-block p-2 bg-danger text-white">Vos Coordonnées :</legend>
+                            <p>
+                                <label for="lastname">Votre Nom :</label> <br>
+                                <input type="text" class="form-control" name="lastname" id="lastname"placeholder="Pan"  size="150" required />
+                            </p>
+                            <p>
+                                <label for="firstname">Votre Prénom :</label> <br>
+                                <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Peter" size="150" required />
+                            </p>
+
+                            <p>
+                                <label for="adress">Votre adresse :</label> <br>
+                                <textarea class="form-control" name="adress" id="adress" placeholder="Montréal" rows="2" cols="150" required ></textarea>
+                            </p>
+                            <p>
+                                <label for="postcode">Votre code Postal :</label> <br>
+                                <input type="text" class="form-control" name="postcode" id="postcode" placeholder="H9X 0B3" size="150" required />
+                            </p>
+                            <p>
+                                <label for="town">Votre Ville :</label> <br>
+                                <input type="text" class="form-control" name="town" id="town" placeholder="Montréal" size="150" required />
+                            </p>
+                            <p>
+                                <label for="town">Votre Pays :</label> <br>
+                                <input type="text" class="form-control" name="town" id="country" placeholder="Canada" size="150" required />
+                            </p>
+                            <p>
+                                <label for="email">Votre Email :</label> <br>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="contact@hyonos.com" size="150" required />
+                            </p>
+                            <p>
+                                <label for="email">Veuillez Confirmer votre Email :</label> <br>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="contact@hyonos.com" size="150" required />
+                            </p>
+                            <p>
+                                <label for="phone">Votre Téléphone :</label> <br>
+                                <input type="phone" class="form-control" name="phone" id="phone" placeholder="01 02 03 04 05" size="150" required />
+                            </p>
+                        </fieldset>
+                    </div>
+                    <input type="submit" value="Envoyer votre Réservation" class="btn btn-danger"/>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+{%endblock%}

@@ -1,0 +1,270 @@
+{% extends 'base.html.twig' %}
+{% block title %}Hypnos - Paris {% endblock %}
+
+
+{% block content%}
+    <link href="{{asset('assets/css/hypnosStyle.css')}}" rel="stylesheet">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="{{ asset('assets/image/hotel_paris/paris_1.jpg') }}" alt="beach" style="width:100%">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="{{ asset('assets/image/hotel_paris/paris_spa.jpg') }}" alt="flower" style="width:100%">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="{{ asset('assets/image/hotel_paris/paris_3.jpg') }}" alt="flowers" style="width:100%">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="centerTitle">
+                Bienvenue a Paris
+            </h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="{{ asset('assets/image/hotel_paris/paris_food.jpg') }}" alt="beach" style="width:100%">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="{{ asset('assets/image/hotel_paris/paris_4.jpg') }}" alt="flower" style="width:100%">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="{{ asset('assets/image/hotel_paris/paris_food.jpg') }}" alt="flowers" style="width:100%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <p>
+            Paris est la commune la plus peuplée et la capitale de la France.<br>
+            La ville de Paris comptait 2,1 millions de Parisiens  au 1er janvier 2020<br>
+            Paris symbolise la culture française. Surnommée la Ville Lumière, elle abrite des monuments mondialement connus comme la cathédrale Notre-Dame de Paris, la Tour Eiffel, le musée du Louvre ou encore l'Arc de Triomphe en haut de l'avenue des Champs-Élysées,<br>Elle est l'une des villes les plus visitées sur la planète.<br>
+        </p>
+        <br>
+        <h4 class="infoPays">
+            <ul>
+                <li>Monnaie : Euros <br></li>
+                <li>Langue : Français</li>
+                <li>Temperature Moyenne Eté : 27 Degrés</li>
+                <li>Temperature Moyenne Hivers : 2 Degrés</li>
+                <li>Religion Principale : Aucune ( Mais la France est pays multiculturel et aux multiple religions ... )</li>
+            </ul>
+        </h4>
+    </div>
+    <br>
+    <div class="container">
+        <h1 class="center">
+            Notre Hôtel :
+        </h1>
+        <p>
+            Situé dans le 16ème arrondissement de Paris, l'établissement La Clef Tour Eiffel Paris by The Crest Collection se trouve à seulement 900 mètres de la tour Eiffel et à 4,4 km du Parc des Princes<br>
+            Un parking privé est mis à votre disposition sur place. Vous séjournerez à 300 mètres de la station de métro Trocadéro, qui vous permettra de rejoindre les Champs-Élysées.<br>
+            C'est le quartier préféré des voyageurs ,comme les couples ,visitant Paris, selon les commentaires clients indépendants.
+        </p>
+    </div>
+    <br>
+    </div>
+    <!-- Menu Reservation  -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <section>
+                    <form method="post" action="/reservation">
+                        <div id="reservation">
+                            <fieldset>
+                                <legend  class="d-block p-2 bg-danger text-white">Bienvenue a Paris<br>Rendez Vous en France</legend>
+                                <p>
+                                    Vous souhaitez réserver ?<br><br>
+                                    <input type="radio" name="booking" value="Chambre Classique" id="Chambre Classique" /> <label for="Chambre Classique">Chambre Classique </label><br>
+                                    <input type="radio" name="booking" value="Chambre Luxe" id="Chambre Luxe" /> <label for="Chambre Luxe">Chambre Luxe</label><br>
+                                    <input type="radio" name="booking" value="Chambre Vue" id="Chambre Vue" /> <label for="Chambre Vue">Chambre avec vue sur la Tour Eiffel</label><br>
+                                    <input type="radio" name="booking" value="Appartement" id="Appartement" /> <label for="Appartement">Appartement</label><br>
+                                    <input type="radio" name="booking" value="Appartement Vue" id="Appartement Vue" /> <label for="Appartement Vue">Appartement avec vue sur la Tour Eiffel</label><br>
+                                </p>
+                                <div class="row">
+                                    <p>
+                                        <label  class="d-block p-2" for="booking_day">Jour d'arrivée :</label>
+                                        <select name="day" id="day">
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+                                        <select name="month" id="month">
+                                            <option value="01">Janvier</option>
+                                            <option value="02">Février</option>
+                                            <option value="03">Mars</option>
+                                            <option value="04">Avril</option>
+                                            <option value="05">Mai</option>
+                                            <option value="06">Juin</option>
+                                            <option value="07">Juillet</option>
+                                            <option value="08">Aout</option>
+                                            <option value="09">Septembre</option>
+                                            <option value="10">Octobre</option>
+                                            <option value="11">Novembre</option>
+                                            <option value="12">Décembre</option>
+                                        </select>
+                                        <select name="year" id="year">
+                                            <option value="2022">2022</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2024">2024</option>
+                                        </select>
+                                    </p>
+                                </div>
+                                <div class="row">
+                                    <p>
+                                        <label  class="d-block p-2" for="booking_day">Jour de Départ:</label>
+                                        <select name="day" id="day">
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+                                        <select name="month" id="month">
+                                            <option value="01">Janvier</option>
+                                            <option value="02">Février</option>
+                                            <option value="03">Mars</option>
+                                            <option value="04">Avril</option>
+                                            <option value="05">Mai</option>
+                                            <option value="06">Juin</option>
+                                            <option value="07">Juillet</option>
+                                            <option value="08">Aout</option>
+                                            <option value="09">Septembre</option>
+                                            <option value="10">Octobre</option>
+                                            <option value="11">Novembre</option>
+                                            <option value="12">Décembre</option>
+                                        </select>
+                                        <select name="year" id="year">
+                                            <option value="2022">2022</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2024">2024</option>
+                                        </select>
+                                    </p>
+                                </div>
+                            </fieldset>
+                        </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <section>
+                    <div id="coordonnees">
+                        <fieldset>
+                            <legend  class="d-block p-2 bg-danger text-white">Vos Coordonnées :</legend>
+                            <p>
+                                <label for="lastname">Votre Nom :</label> <br>
+                                <input type="text" class="form-control" name="lastname" id="lastname"placeholder="Pan"  size="150" required />
+                            </p>
+                            <p>
+                                <label for="firstname">Votre Prénom :</label> <br>
+                                <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Peter" size="150" required />
+                            </p>
+
+                            <p>
+                                <label for="adress">Votre adresse :</label> <br>
+                                <textarea class="form-control" name="adress" id="adress" placeholder="Montréal" rows="2" cols="150" required ></textarea>
+                            </p>
+                            <p>
+                                <label for="postcode">Votre code Postal :</label> <br>
+                                <input type="text" class="form-control" name="postcode" id="postcode" placeholder="H9X 0B3" size="150" required />
+                            </p>
+                            <p>
+                                <label for="town">Votre Ville :</label> <br>
+                                <input type="text" class="form-control" name="town" id="town" placeholder="Montréal" size="150" required />
+                            </p>
+                            <p>
+                                <label for="town">Votre Pays :</label> <br>
+                                <input type="text" class="form-control" name="town" id="country" placeholder="Canada" size="150" required />
+                            </p>
+                            <p>
+                                <label for="email">Votre Email :</label> <br>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="contact@hyonos.com" size="150" required />
+                            </p>
+                            <p>
+                                <label for="email">Veuillez Confirmer votre Email :</label> <br>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="contact@hyonos.com" size="150" required />
+                            </p>
+                            <p>
+                                <label for="phone">Votre Téléphone :</label> <br>
+                                <input type="phone" class="form-control" name="phone" id="phone" placeholder="01 02 03 04 05" size="150" required />
+                            </p>
+                        </fieldset>
+                    </div>
+                    <input type="submit" value="Envoyer votre Réservation" class="btn btn-danger"/>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+{%endblock%}

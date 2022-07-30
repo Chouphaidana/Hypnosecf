@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hypnos - Comptes{% endblock %}
+
+{% block content %}
+    <br>
+    <h1 class="center">Votre Compte :</h1>
+    <br>
+    <p class="center">Bonjour {{ (app.user.firstname) }} <br>
+    Bienvenue dans votre compte.<br>
+    C'est dans cet espace que vous allez pouvoir gérer toutes vos informations personelles</p>
+ <hr>
+    <a href="{{ path('account_password') }}">Modifier mon mot de passe</a><br>
+    Ajouter Mes Adresses<br>
+    Mes Réservations
+{% endblock %}
